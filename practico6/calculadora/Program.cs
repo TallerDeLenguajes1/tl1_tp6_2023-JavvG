@@ -6,44 +6,22 @@ string? input1, input2, option2;     // string? indica que el dato puede ser una
 
 int option1;
 
-double number1, number2, result = 0;
+double number1, number2;
 
 do {
 
-    Console.WriteLine("\n > Ingrese dos números: ");
+    Console.WriteLine("\n > Ingrese una operación simple: ");
 
-    Console.Write("\n - Primer número: ");
     input1 = Console.ReadLine();
 
-    while(!double.TryParse(input1, out number1)) {
+    while(string.IsNullOrEmpty(input1)) {
 
-        Console.Write("\n (!) Ha ingresado un caracter inválido.\n > Por favor, ingrese un número: ");
+        Console.Write("\n (!) Ingrese la operación (no puede estar vacía): ");
         input1 = Console.ReadLine();
 
     }
 
-    Console.Write("\n - Segundo número: ");
-    input2 = Console.ReadLine();
-
-    while(!double.TryParse(input2, out number2)) {
-
-        Console.Write("\n (!) Ha ingresado un caracter inválido.\n > Por favor, ingrese un número: ");
-        input2 = Console.ReadLine();
-
-    }
-
-    Console.WriteLine("\n\n ¿Qué operación desea realizar?");
-    Console.Write("\n [1] - Suma \n [2] - Resta \n [3] - Multiplicación \n [4] - División \n");
-
-    Console.Write("\n\n >> Su elección: ");
-    input1 = Console.ReadLine();
-
-    while(!int.TryParse(input1, out option1) || option1 < 1 || option1 > 4) {
-
-        Console.Write("\n\n (!) Ha ingresado una opción inválida.\n > Ingrese nuevamente: ");
-        input1 = Console.ReadLine();
-
-    }
+    if()
 
     switch(option1) {
 
