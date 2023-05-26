@@ -49,31 +49,29 @@ do {
 
         case 1:
 
-            result = number1 + number2;
+            Console.WriteLine($"\n >> El resultado de {number1} + {number2} es {(number1 + number2).ToString("N3")}");
 
         break;
 
         case 2:
 
-            result = number1 - number2;
+            Console.WriteLine($"\n >> El resultado de {number1} - {number2} es {(number1 - number2).ToString("N3")}");
 
         break;
 
         case 3:
 
-            result = number1 * number2;
+            Console.WriteLine($"\n >> El resultado de {number1} * {number2} es {(number1 * number2).ToString("N3")}");
 
         break;
 
         case 4:
 
-            result = number1 / number2;
+            Console.WriteLine($"\n >> El resultado de {number1} / {number2} es {(number1 / number2).ToString("N3")}");
 
         break;
 
     }
-
-    Console.WriteLine("\n >> El resultado es " + result.ToString("N3"));
 
     Console.ReadLine();     // Pausa del sistema, esperando interacción del usuario
 
